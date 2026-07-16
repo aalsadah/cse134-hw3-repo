@@ -1,0 +1,8 @@
+body{
+    background-color: antiquewhite;
+}
+header{
+    border: 4px dashed red;
+    padding: 2rem;
+    padding-bottom: 1rem 2rem 0.1rem 5rem;
+}
