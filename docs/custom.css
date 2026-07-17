@@ -1,0 +1,8 @@
+
+:root{
+    --main-background: rgb(255, 252, 245);
+    --headings-color: maroon;
+    --document-fonts: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --default-padding: 1rem;
+
+}

@@ -1,21 +1,83 @@
 /* https://aalsadah.github.io/cse134-hw3-repo/cheese.html */
-
-:root{
-    --main-background: antiquewhite;
-    --headings-color: rgb(63, 20, 20);
-    --document-fonts:"comic-sans", serif;
-
+@import "custom.css";
+/*link is still better in production because it directly links the css to the html while the import loads css into another css file, that may cause style flashes and could hide styles from older browsers*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 body{
     background-color: var(--main-background);
-    font-family: "comic-sans";
-
+    font-family:var(--document-fonts);
+    color:black;
+    line-height: 1.5rem;
+    padding: var(--default-padding); 
 }
-header{
-    border: 4px dashed red;
-    padding: 2rem;
+address{
+    color:orangered;
+    font-size: 0.75rem;
 }
 h1, h2, h3, h4, h5, h6{
+    padding:var(--default-padding);
     color:var(--headings-color);
+}
+#warning{
+    padding:1rem;
+    border: 4px dashed red;
+    font-style: oblique;
+}
+blockquote{
+    text-align: center;
+    margin:0.5rem;
+    padding:1.5em;
+    border: 2px solid orange;
+}
+.author{
+    text-indent:3vw
+}
+.latin{
+    text-shadow:1px 1px 1px olive;
+}
+article[lang]{
+    text-align: left;
+}
+header p{
+    padding-top: 1%;
+    text-align: center;
+    font-size: larger;
+    font: bold;
+    color:chocolate;
+    -webkit-text-stroke: 0.5px orange;
+}
+h2,h3,h4,h5{
+    font-size: x-large;
+}
+dt + dd{
+    text-indent: 3.5%;
+    font-style:italic;
+    padding-bottom: 1%;
+}
+a[href]:hover{
+    background-color: lightblue;
+}
+a[href]:focus{
+    background-color: aquamarine;
+}
+input[type="text"]:focus{
+    background-color: lightblue;
+}
+button:focus{
+    background-color: lightblue;
+}
+input[type="checkbox"]:checked + label{
+    font-style: oblique;
+    font-size: large;
+}
+dt{
+    font-weight:bold;
+    font-size:large;
+    color:chocolate
+}
+dt::before{
+    content:"🧀"
 }
