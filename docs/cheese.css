@@ -9,7 +9,8 @@
 
 body{
     background-color: var(--main-background);
-    
+    font-family: "comic-sans";
+
 }
 header{
     border: 4px dashed red;
